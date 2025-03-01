@@ -1,0 +1,166 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilos do Header */
+header {
+    background-color: #000; /* Preto */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    padding: 5px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d32f2f; /* Vermelho */
+}
+
+/* Estilos para as Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #d32f2f; /* Vermelho */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos da Lista de Projetos */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+ul li h3 {
+    font-size: 24px;
+    color: #d32f2f; /* Vermelho */
+}
+
+ul li p {
+    font-size: 16px;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #000; /* Preto */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Media Query para telas menores (celulares) */
+@media screen and (max-width: 768px) {
+
+    /* Ajustes no Header */
+    header .logo h1 {
+        font-size: 36px;
+    }
+
+    header .logo p {
+        font-size: 16px;
+    }
+
+    /* Estilos de navegação */
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /* Ajustes nas seções */
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    /* Ajustes na lista de projetos */
+    ul li h3 {
+        font-size: 20px;
+    }
+
+    ul li p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
